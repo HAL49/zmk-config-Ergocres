@@ -9,12 +9,6 @@ config ZMK_SPLIT
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_POINTING
-    default y
-
-config PAW3222
-    default y
-
 endif
 
 if SHIELD_ERGOCRES_L
@@ -23,12 +17,6 @@ config ZMK_KEYBOARD_NAME
     default "Ergocres_L"
 
 config ZMK_SPLIT
-    default y
-    
-config ZMK_POINTING
-    default y
-
-config PAW3222
     default y
     
     
