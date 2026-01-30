@@ -46,11 +46,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL         &kp F               &kp P        &kp J     &kp R      &kp W            &none      &kp E      &kp Y    &kutouten  &kp Q      &kp MINUS
-&kp TAB           &kp S               &kp K        &kp T     &kp N      &kp H            &none      &kp A      &kp O    &kp I      &kp U      &kp BSLH
-&kp ESC           &kp Z               &kp G        &kp D     &kp M      &kp B            &none      &kp V      &kp C    &kp X      &kp L      &kp SQT
-&kp GRAVE         &none               &none        &none     &kp TAB    &kp BACKSPACE    &kp ENTER  &kp SPACE  &none    &none      &none      &kp PG_UP
-&lt 1 LEFT_SHIFT  &lt 3 LEFT_CONTROL  &lt 2 ENTER  &kp RGUI  &kp RCTRL  &kp RSHIFT       &lt 1 F13  &kp DEL    &kp TAB  &kp ENTER  &kp SPACE  &kp BACKSPACE
+&kp EQUAL  &kp F        &kp P       &kp J           &kp R    &kp W                &none      &kp E      &kp Y  &kutouten  &kp Q     &kp MINUS
+&kp TAB    &kp S        &kp K       &kp T           &kp N    &kp H                &none      &kp A      &kp O  &kp I      &kp U     &kp BSLH
+&kp ESC    &kp Z        &kp G       &kp D           &kp M    &kp B                &none      &kp V      &kp C  &kp X      &kp L     &kp SQT
+&kp GRAVE  &none        &none       &none           &kp TAB  &kp BACKSPACE        &kp ENTER  &kp SPACE  &none  &none      &none     &kp PG_UP
+&kp F13    &kp K_PASTE  &kp K_COPY  &kp RC(RSHIFT)  &kp UP   &kp LANG_HIRAGANA    &mo 1      &mo 2      &mo 3  &kp LEFT   &kp DOWN  &kp RIGHT
             >;
         };
 
