@@ -12,11 +12,11 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        nakaguro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp K &kp G>;
+            label = "NEW_MACRO";
         };
     };
 
@@ -35,6 +35,13 @@
         #binding-cells = <0>;
         bindings = <&kp COMMA>, <&kp DOT>;
     };
+
+    touten: touten {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TOUTEN";
+        #binding-cells = <0>;
+        bindings = <&kp COMMA>, <&nakaguro>;
+    };
 };
 
 / {
@@ -46,10 +53,10 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp F        &kp P       &kp J           &kp R    &kp W                &none      &kp E      &kp Y  &kutouten  &kp Q     &kp MINUS
-&kp TAB    &kp S        &kp K       &kp T           &kp N    &kp H                &none      &kp A      &kp O  &kp I      &kp U     &kp BSLH
-&kp ESC    &kp Z        &kp G       &kp D           &kp M    &kp B                &none      &kp V      &kp C  &kp X      &kp L     &kp SQT
-&kp GRAVE  &none        &none       &none           &kp TAB  &kp BACKSPACE        &kp ENTER  &kp SPACE  &none  &none      &none     &kp PG_UP
+&kp Q      &kp F        &kp J       &kp G           &touten  &none                &kp P      &kp Y      &kp U  &kp L      &none     &kp MINUS
+&kp X      &kp A        &kp I       &kp T           &kp K    &kp B                &kp M      &kp S      &kp E  &kp O      &kp N     &kp RCTRL
+&kp V      &kp C        &kp Z       &kp H           &kp R    &none                &kp W      &kp D      &none  &kp SLASH  &kp UP    &kp SQT
+&kp GRAVE  &none        &none       &none           &kp TAB  &kp BACKSPACE        &kp ENTER  &kp SPACE  &none  &kp LEFT   &kp DOWN  &kp RIGHT
 &kp F13    &kp K_PASTE  &kp K_COPY  &kp RC(RSHIFT)  &kp UP   &kp LANG_HIRAGANA    &mo 1      &mo 2      &mo 3  &kp LEFT   &kp DOWN  &kp RIGHT
             >;
         };
