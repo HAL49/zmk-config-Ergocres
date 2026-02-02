@@ -57,7 +57,7 @@
             bindings = <
 &kp Q      &kp F        &kp J       &kp G           &comma_ten  &none            &kp P      &kp Y      &kp U  &kp L      &none     &kp MINUS
 &kp X      &kp A        &kp I       &kp T           &kp K       &kp B            &kp M      &kp S      &kp E  &kp O      &kp N     &kp RCTRL
-&kp V      &kp C        &kp Z       &kp H           &kp R       &none            &kp W      &kp D      &none  &kp SLASH  &kp UP    &kp SQT
+&kp V      &kp C        &kp Z       &kp H           &kp R       &none            &kp W      &kp D      &none  &kp SLASH  &kp UP    &none
 &kp GRAVE  &none        &none       &none           &kp TAB     &kp BACKSPACE    &kp ENTER  &kp SPACE  &none  &kp LEFT   &kp DOWN  &kp RIGHT
 &kp F13    &kp K_PASTE  &kp K_COPY  &kp RC(RSHIFT)  &kp UP      &kp F14          &mo 1      &mo 2      &mo 3  &kp LEFT   &kp DOWN  &kp RIGHT
             >;
