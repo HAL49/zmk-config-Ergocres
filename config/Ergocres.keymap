@@ -67,11 +67,11 @@
 
         layer_1 {
             bindings = <
-&kp HOME  &mt DLLR BSLH     &mt MINUS PLUS  &none   &mail02_ysym     &none      &kp AT_SIGN           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTRK      &kp HASH           &none
-&kp END   &trans            &kp EQUAL       &trans  &mail01_kasugai  &tel       &mt UNDERSCORE MINUS  &kp LPAR          &kp RPAR           &kp RS(SLASH)  &kp DOUBLE_QUOTES  &none
-&trans    &mt LC(HOME) UP   &none           &none   &mail03_kmakoto  &trans     &trans                &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp COLON      &trans             &trans
-&kp LEFT  &mt LC(END) DOWN  &kp RIGHT       &trans  &trans           &trans     &kp ENTER             &kp SPACE         &trans             &trans         &trans             &trans
-&trans    &trans            &trans          &trans  &trans           &kp TAB    &kp F14               &kp LC(V)         &kp LC(C)          &trans         &trans             &kp F13
+&kp HOME    &mt DLLR BSLH     &mt MINUS PLUS  &none   &mail02_ysym     &none            &kp AT_SIGN           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTRK      &kp HASH           &none
+&kp END     &trans            &kp EQUAL       &trans  &mail01_kasugai  &tel             &mt UNDERSCORE MINUS  &kp LPAR          &kp RPAR           &kp RS(SLASH)  &kp DOUBLE_QUOTES  &mt RSHIFT RCTRL
+&kp LSHIFT  &mt LC(HOME) UP   &none           &none   &mail03_kmakoto  &trans           &trans                &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp COLON      &trans             &trans
+&kp LEFT    &mt LC(END) DOWN  &kp RIGHT       &trans  &kp LSHIFT       &kp BACKSPACE    &kp ENTER             &kp SPACE         &trans             &trans         &trans             &trans
+&trans      &trans            &trans          &trans  &trans           &kp TAB          &kp F14               &kp LC(V)         &kp LC(C)          &trans         &trans             &kp F13
             >;
         };
 
