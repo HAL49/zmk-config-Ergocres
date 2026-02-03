@@ -29,11 +29,11 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp F                    &kp J         &kp G           &mt PERIOD COMMA  &mt QUESTION EXCLAMATION          &kp P      &kp Y        &kp U            &kp L       &kp AT_SIGN  &kp MINUS
-&kp X         &kp A                    &lt 3 I       &lt 2 T         &lt 1 K           &kp B                             &kp M      &lt 1 S      &kp E            &kp O       &kp N        &kp RCTRL
-&kp V         &kp C                    &kp Z         &kp H           &kp R             &mt RIGHT_BRACKET LEFT_BRACKET    &kp W      &kp D        &mt TILDE MINUS  &kp COLON   &kp UP       &none
-&mt DEL ESC   &mt INT_HENKAN LEFT_WIN  &kp LEFT_ALT  &kp LCTRL       &nn               &kp BACKSPACE                     &kp ENTER  &kp SPACE    &none            &kp LEFT    &kp DOWN     &kp RIGHT
-&kp C_VOL_DN  &kp K_MUTE               &kp C_VOL_UP  &kp RC(RSHIFT)  &none             &kp TAB                           &kp F14    &kp K_PASTE  &kp K_COPY       &kp K_UNDO  &kp K_REDO   &kp F13
+&kp Q         &kp F                    &kp J         &kp G           &mt PERIOD COMMA  &mt QUESTION EXCLAMATION          &kp P      &kp Y      &kp U            &kp L       &kp AT_SIGN  &kp MINUS
+&kp X         &kp A                    &lt 3 I       &lt 2 T         &lt 1 K           &kp B                             &kp M      &lt 1 S    &kp E            &kp O       &kp N        &kp RCTRL
+&kp V         &kp C                    &mt LC(Z) Z   &kp H           &kp R             &mt RIGHT_BRACKET LEFT_BRACKET    &kp W      &kp D      &mt TILDE MINUS  &kp COLON   &kp UP       &none
+&mt DEL ESC   &mt INT_HENKAN LEFT_WIN  &kp LEFT_ALT  &kp LCTRL       &nn               &kp BACKSPACE                     &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT    &kp DOWN     &kp RIGHT
+&kp C_VOL_DN  &kp K_MUTE               &kp C_VOL_UP  &kp RC(RSHIFT)  &none             &kp TAB                           &kp F14    &kp LC(V)  &kp LC(C)        &kp K_UNDO  &kp K_REDO   &kp F13
             >;
         };
 
