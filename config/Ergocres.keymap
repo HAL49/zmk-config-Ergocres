@@ -22,6 +22,34 @@
             bindings = <&kp N &kp N>;
             label = "NN";
         };
+
+        mail01_kasugai: mail01_kasugai {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp A &kp S &kp U &kp G &kp A &kp I &kp N4 &kp N9 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "MAIL01_KASUGAI";
+        };
+
+        mail02_ysym: mail02_ysym {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp S &kp Y &kp M &kp AT &kp Y &kp M &kp A &kp I &kp L &kp DOT &kp N &kp E &kp DOT &kp J &kp P>;
+            label = "MAIL02_YSYM";
+        };
+
+        mail03_kmakoto: mail03_kmakoto {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp M &kp A &kp K &kp O &kp T &kp O &kp N3 &kp N3 &kp N3 &kp N1 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "MAIL03_KMAKOTO";
+        };
+
+        tel: tel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N9 &kp N0 &kp N8 &kp N5 &kp N0 &kp N7 &kp N0 &kp N7 &kp N6 &kp N1>;
+            label = "TEL";
+        };
     };
 
     keymap {
@@ -29,21 +57,21 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp F                    &kp J         &kp G           &mt PERIOD COMMA  &mt QUESTION EXCLAMATION          &kp P      &kp Y      &kp U            &kp L       &kp AT_SIGN  &kp MINUS
-&kp X         &kp A                    &lt 3 I       &lt 2 T         &lt 1 K           &kp B                             &kp M      &lt 1 S    &kp E            &kp O       &kp N        &kp RCTRL
-&kp V         &kp C                    &mt LC(Z) Z   &kp H           &kp R             &mt RIGHT_BRACKET LEFT_BRACKET    &kp W      &kp D      &mt TILDE MINUS  &kp COLON   &kp UP       &none
-&mt DEL ESC   &mt INT_HENKAN LEFT_WIN  &kp LEFT_ALT  &kp LCTRL       &nn               &kp BACKSPACE                     &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT    &kp DOWN     &kp RIGHT
-&kp C_VOL_DN  &kp K_MUTE               &kp C_VOL_UP  &kp RC(RSHIFT)  &none             &kp TAB                           &kp F14    &kp LC(V)  &kp LC(C)        &kp K_UNDO  &kp K_REDO   &kp F13
+&kp Q         &kp F                    &kp J         &kp G           &mt PERIOD COMMA  &mt QUESTION EXCLAMATION          &kp P      &kp Y      &kp U            &kp L       &kp AT_SIGN       &kp MINUS
+&kp X         &kp A                    &lt 3 I       &lt 2 T         &lt 1 K           &kp B                             &kp M      &lt 1 S    &kp E            &kp O       &kp N             &kp RCTRL
+&kp V         &kp C                    &mt LC(Z) Z   &kp H           &kp R             &mt RIGHT_BRACKET LEFT_BRACKET    &kp W      &kp D      &mt TILDE MINUS  &kp COLON   &mt RC(HOME) UP   &none
+&mt DEL ESC   &mt INT_HENKAN LEFT_WIN  &kp LEFT_ALT  &kp LCTRL       &nn               &kp BACKSPACE                     &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT    &mt RC(END) DOWN  &kp RIGHT
+&kp C_VOL_DN  &kp K_MUTE               &kp C_VOL_UP  &kp RC(RSHIFT)  &none             &kp TAB                           &kp F14    &kp LC(V)  &kp LC(C)        &kp K_UNDO  &kp K_REDO        &kp F13
             >;
         };
 
         layer_1 {
             bindings = <
-&kp F1    &kp F2          &kp F3          &kp F4           &kp F5   &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11   &kp F12
-&kp HOME  &trans          &kp UP_ARROW    &trans           &kp END  &trans    &trans  &trans  &trans  &trans   &kp LBKT  &kp RBKT
-&trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &trans    &trans  &trans  &trans  &trans   &trans    &trans
-&trans    &trans          &trans          &trans           &trans   &trans    &trans  &trans  &trans  &trans   &trans    &trans
-&trans    &trans          &trans          &trans           &trans   &trans    &trans  &trans  &trans  &trans   &trans    &trans
+&kp HOME  &mt DLLR BSLH     &mt MINUS PLUS  &none   &mail02_ysym     &none      &kp AT_SIGN           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTRK      &kp HASH           &none
+&kp END   &trans            &kp EQUAL       &trans  &mail01_kasugai  &tel       &mt UNDERSCORE MINUS  &kp LPAR          &kp RPAR           &kp RS(SLASH)  &kp DOUBLE_QUOTES  &none
+&trans    &mt LC(HOME) UP   &none           &none   &mail03_kmakoto  &trans     &trans                &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp COLON      &trans             &trans
+&kp LEFT  &mt LC(END) DOWN  &kp RIGHT       &trans  &trans           &trans     &kp ENTER             &kp SPACE         &trans             &trans         &trans             &trans
+&trans    &trans            &trans          &trans  &trans           &kp TAB    &kp F14               &kp LC(V)         &kp LC(C)          &trans         &trans             &kp F13
             >;
         };
 
